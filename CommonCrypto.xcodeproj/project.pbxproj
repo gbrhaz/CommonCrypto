@@ -321,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ruby ./change_xcode_location.rb";
+			shellScript = "ruby $SRCROOT/change_xcode_location.rb";
 		};
 		4ACD88A41EFE8D0B00E48E07 /* Change Xcode location */ = {
 			isa = PBXShellScriptBuildPhase;
