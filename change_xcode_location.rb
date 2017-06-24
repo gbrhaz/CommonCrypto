@@ -1,6 +1,8 @@
 #!/usr/bin/ruby
-dir = ARGV[0]
-Dir[dir].each do |file_name|
+dir = ENV["TARGET_TEMP_DIR"]
+file = File.join(dir, "module.modulemap")
+print file
+Dir[file].each do |file_name|
   text = File.read(file_name)
   path = `xcode-select -p`.strip << "/"
   new_contents = text.gsub(/\/Applications\/Xcode.app\/Contents\/Developer\//, path)
