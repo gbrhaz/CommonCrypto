@@ -364,7 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ruby $SRCROOT/change_xcode_location.rb \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.framework/*.modulemap'\"";
+			shellScript = "ruby $SRCROOT/change_xcode_location.rb \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.framework/Modules/*.modulemap'\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
