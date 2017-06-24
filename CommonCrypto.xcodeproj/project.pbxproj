@@ -171,6 +171,7 @@
 				216CAE301AE6B273009A69EF /* Frameworks */,
 				216CAE311AE6B273009A69EF /* Headers */,
 				216CAE321AE6B273009A69EF /* Resources */,
+				4ACD88A91EFE9F2800E48E07 /* Change framework modulemap */,
 			);
 			buildRules = (
 			);
@@ -321,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ruby $SRCROOT/change_xcode_location.rb";
+			shellScript = "ruby $SRCROOT/change_xcode_location.rb \"'CommonCrypto/*.modulemap'\"";
 		};
 		4ACD88A41EFE8D0B00E48E07 /* Change Xcode location */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -350,6 +351,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "ruby ./change_xcode_location.rb";
+		};
+		4ACD88A91EFE9F2800E48E07 /* Change framework modulemap */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Change framework modulemap";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ruby $SRCROOT/change_xcode_location.rb \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.framework/*.modulemap'\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
