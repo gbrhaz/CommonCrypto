@@ -147,7 +147,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211216961AE68D26004E1CE6 /* Build configuration list for PBXNativeTarget "CommonCrypto-macOS" */;
 			buildPhases = (
-				4ACD88A21EFE8C9D00E48E07 /* Change Xcode location */,
 				2112167E1AE68D26004E1CE6 /* Sources */,
 				2112167F1AE68D26004E1CE6 /* Frameworks */,
 				211216801AE68D26004E1CE6 /* Headers */,
@@ -184,7 +183,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80098A581C12E5890029C530 /* Build configuration list for PBXNativeTarget "CommonCrypto-tvOS" */;
 			buildPhases = (
-				4ACD88A51EFE8D0F00E48E07 /* Change Xcode location */,
 				80098A4C1C12E5890029C530 /* Sources */,
 				80098A4D1C12E5890029C530 /* Frameworks */,
 				80098A4E1C12E5890029C530 /* Headers */,
@@ -203,7 +201,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8045032F1BA209F6002A5470 /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */;
 			buildPhases = (
-				4ACD88A41EFE8D0B00E48E07 /* Change Xcode location */,
 				804503231BA209F6002A5470 /* Sources */,
 				804503241BA209F6002A5470 /* Frameworks */,
 				804503251BA209F6002A5470 /* Headers */,
@@ -292,51 +289,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4ACD88A21EFE8C9D00E48E07 /* Change Xcode location */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Change Xcode location";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ruby ./change_xcode_location.rb";
-		};
-		4ACD88A41EFE8D0B00E48E07 /* Change Xcode location */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Change Xcode location";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ruby ./change_xcode_location.rb";
-		};
-		4ACD88A51EFE8D0F00E48E07 /* Change Xcode location */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Change Xcode location";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ruby ./change_xcode_location.rb";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2112167E1AE68D26004E1CE6 /* Sources */ = {
